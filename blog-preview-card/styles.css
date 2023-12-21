@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Figtree';
-    src: url('...fonts/Figtree-VariableFont_wght.ttf') format('ttf')
-}
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;800;900&display=swap');
 
 * {
     box-sizing: border-box;
