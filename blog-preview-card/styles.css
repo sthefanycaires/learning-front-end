@@ -36,6 +36,10 @@ body {
     box-shadow: 17px 17px 0px 0px #000;
 }
 
+header {
+    padding: 0
+}
+
 img {
     width: 100%;
     height: auto;
