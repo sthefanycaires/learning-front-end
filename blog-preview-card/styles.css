@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('...fonts/Figtree-VariableFont_wght.ttf') format('ttf')
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Figtree';
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5D04E;
+    height: 100vh;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 28%;
+    height: auto;
+    padding: 24px;
+    margin: auto;
+    background-color: #FFF;
+    border: 1px solid #1C1300;
+    border-radius: 20px;
+    box-shadow: 7px 7px 0px 0px #000;
+    transition: 200ms linear;
+}
+
+.container:hover {
+    box-shadow: 17px 17px 0px 0px #000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.row-1 {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: #F5D04E;
+    border-radius: 5px;
+    padding: 5.5px 12.5px;
+    font-weight: bold;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+a {
+    font-weight: 800;
+    color: #151515;
+    text-decoration:  none;
+    transition: 200ms linear;
+}
+
+a:hover {
+    color: #F5D04E;
+}
+
+.content p {
+    color: #858585;
+    line-height: 150%;
+}
+
+.autor {
+    display: flex;
+    gap: 12px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.autor p {
+    margin: auto 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #060606;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        margin: auto 24px;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .row-1 {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+}
