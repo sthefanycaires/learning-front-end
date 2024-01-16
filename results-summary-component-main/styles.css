@@ -145,7 +145,7 @@ p {
     font-weight: 500;
 }
 
-#score {
+.scores {
     color: #303B5A;
     font-weight: bold;
 }
