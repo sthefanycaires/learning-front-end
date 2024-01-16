@@ -145,7 +145,7 @@ p {
     font-weight: 500;
 }
 
-.scores {
+#score-reaction, #score-memory, #score-verbal, #score-visual {
     color: #303B5A;
     font-weight: bold;
 }
