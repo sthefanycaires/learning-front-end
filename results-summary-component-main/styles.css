@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.125rem;
+
+}
+
+main {
+    max-width: 736px;
+    background-color: #fff;
+    box-shadow: 16px 16px 30px 8px rgba(48, 44, 232, 0.05);
+    border-radius: 30px;
+    flex-direction: row;
+    display: flex;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #6743FF 0%, #302CE8 100%);
+    padding: 40px 55px;
+    text-align: center;
+}
+
+.score h2,
+p {
+    color: #C8C7FF;
+}
+
+.number {
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    background: linear-gradient(180deg, #4E21CA 0%, rgba(36, 33, 202, 0.00) 100%);
+    box-shadow: 0px -2px 0px 0px rgba(255, 255, 255, 0.05);
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.message p {
+    margin-top: 15px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 24px;
+}
+
+.summary h2 {
+    color: #303B5A;
+    margin-bottom: 35px;
+}
+
+.summary p {
+    color: #95929B;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.texticon {
+    display: flex;
+    gap: 12px;
+}
+
+.card.reaction {
+    background-color: #FFF6F5;
+}
+
+#reaction {
+    color: #FF5555;
+}
+
+.card.memory {
+    background-color: #FFFBF2;
+}
+
+#memory {
+    color: #FFB21E;
+}
+
+.card.verbal {
+    background-color: #F2FBFA;
+}
+
+#verbal {
+    color: #00BB8F;
+}
+
+.card.visual {
+    background-color: #F3F3FD;
+}
+
+#visual {
+    color: #1125D6;
+}
+
+.count {
+    display: flex;
+    gap: 4px;
+}
+
+.count p {
+    font-weight: 500;
+}
+
+#score {
+    color: #303B5A;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    height: 56px;
+    margin-top: 19px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background: #303B59;
+    color: white;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #6743FF 0%, #302CE8 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .score {
+        width: 100%;
+        padding: 24px auto;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .summary {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .summary h2 {
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .number {
+        font-size: 56px;
+    }
+
+    .message p {
+        margin-top: 10px;
+    }
+
+    .circle {
+        margin-top: 15px;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+}
