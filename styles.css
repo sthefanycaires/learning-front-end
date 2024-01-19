@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    height: 100vh;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #1F1F1F;
+    padding: 40px;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    gap: 26px;
+}
+
+section {
+    width: 304px;
+}
+
+img {
+    border-radius: 90px;
+    width: 88px;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #DE756A;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+section p {
+    margin-top: 28px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.links {
+    background-color: #333333;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 200ms linear;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color: #DE756A;
+    color: #1F1F1F;
+}
+
+footer { 
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 11px; 
+}
+
+footer a { 
+    color: #DE756A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    color: #DE756A;
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 425px) {
+    main {
+        padding: 24px;
+        margin: auto 25px;
+    }
+    
+    section {
+        width: auto;
+    }
+}
