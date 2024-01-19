@@ -83,23 +83,11 @@ nav {
 
 footer { 
     text-align: center; 
-    margin-bottom: 15px;
-}
-
-footer p {
-    font-size: 11px; 
+    margin-bottom: 30px;
 }
 
 footer a { 
-    color: #DE756A;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-icons {
-    color: #DE756A;
-    width: 24px;
-    height: 24px;
+    margin-right: 15px;
 }
 
 @media (max-width: 425px) {
