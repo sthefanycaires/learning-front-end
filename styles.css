@@ -86,8 +86,18 @@ footer {
     margin-bottom: 30px;
 }
 
-footer a { 
+footer a {
     margin-right: 15px;
+}
+
+i { 
+    
+    transition: 200ms linear;
+    color: #de756a;
+}
+
+i:hover {
+    color: #fff;
 }
 
 @media (max-width: 425px) {
