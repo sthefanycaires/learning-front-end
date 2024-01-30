@@ -15,7 +15,7 @@ body {
     color: white;
 }
 
-h1, p {
+h1, h2 {
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ h1 {
     font-size: 36px;
 }
 
-p {
+h2 {
     font-size: 18px;
     margin: 18px 0px;
     font-weight: 300;
@@ -85,6 +85,18 @@ textarea {
     margin: 0;
 }
 
+.attribution {
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -95,6 +107,14 @@ textarea {
         padding: 25px;
     }
     
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
     input, #dropdown, textarea, #text, #submit {
         font-size: 14px;
     }
