@@ -1,51 +1,43 @@
 * {
-    font-family: Montserrat, sans-serif;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-weight: 500;
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+
+body {
     margin: 50px;
-    background-image: linear-gradient(
-        115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
-      ),
-      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), 
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-size: 18px;
-  }
-  
-  .content {
-    max-width: 55%;
-    min-width: 350px;
-    margin: auto;
-  }
-  
-  #title, #description {
+}
+
+h1, p {
     text-align: center;
-  }
-  
-  #description {
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    margin: 18px 0px;
     font-weight: 300;
-  }
-  
-  #survey-form {
+}
+
+main {
     background-color: #00000077;
     padding: 50px;
-    border-radius: 5px; 
-  }
-  
-  label, input, select, textarea, legend {
-    display: block;
-    margin: 10px 0 30px 0;
-  }
-  
-  .input-text, #dropdown, textarea {
+    border-radius: 5px;
+    width: 55%;
+    margin: auto;
+}
+
+input, #dropdown, textarea {
     height: 40px;
     width: 100%;
     font-size: 16px;
@@ -54,38 +46,56 @@
     padding: 5px 10px;
     color: #1e1e1e;
     border-radius: 4px;
-  }
-  
-  option {
-    font-size: 16px;
-  }
-  
-  .radio, .checkbox {
+    margin: 10px 0 30px 0;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.radio, .checkbox {
     display: inline;
-    margin: 0 5px 0px 0px;
-    width: 20px;
-  }
-  
-  .radio-label, .checkbox-label {
-    margin: 15px 0px 15px;
-  }
-  
-  .recommendation {
+    margin: 0 10px 0px 0px;
+    width: 1em;
+}
+
+legend {
     margin-bottom: 30px;
-  }
-  
-  textarea {
+}
+
+textarea {
     height: 150px;
     padding: 10px 10px;
-  }
-  
-  #submit {
+}
+
+#submit {
     width: 100%;
     height: 40px;
     font-size: 16px;
     background-color: #37af65;
-    border:none;
+    border: none;
     color: white;
     border-radius: 4px;
     margin: 0;
-  }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        padding: 25px;
+    }
+    
+    input, #dropdown, textarea, #text, #submit {
+        font-size: 14px;
+    }
+}
