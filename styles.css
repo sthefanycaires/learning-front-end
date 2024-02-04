@@ -10,8 +10,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #141414;
-    height: 100vh;
     color: #fff;
+    margin: 5%;
+    gap: 30px;
 }
 
 main {
@@ -83,7 +84,6 @@ nav {
 
 footer { 
     text-align: center; 
-    margin-bottom: 30px;
 }
 
 footer a {
@@ -103,7 +103,6 @@ i:hover {
 @media (max-width: 425px) {
     main {
         padding: 24px;
-        margin: auto 25px;
     }
     
     section {
